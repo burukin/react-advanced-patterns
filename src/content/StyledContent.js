@@ -118,13 +118,14 @@ export const DisplayBox = styled.div`
   position: relative;
   width: 100%;
   min-height: 360px;
-  max-height: 360px;
+  max-height: 400px;
   overflow-y: scroll;
   padding: ${() => `${SIDEBAR_LEFT_PADDING}vw`};
   margin: ${({ m }) => m};
   border-radius: 16px;
   background-color: ${() => `${LIGHT_ASH}`};
   text-align: center;
+  overflow: hidden;
 
   > svg {
     position: relative;

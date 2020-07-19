@@ -45,11 +45,6 @@ const patterns = [
   'state-reducers'
 ]
 
-const PR_ROOT =
-  'https://github.com/ohansemmanuel/advanced-react-patterns-ultrasimplified/pull'
-const PR_IDs = [1, 16, 17, 19, 6, 7, 8, 9, 10, 12]
-const PRs = PR_IDs.map(id => `${PR_ROOT}/${id}`)
-
 const Header = ({ title, patternNumber }) => {
   // animated el
   const [{ lightBulbEl, infoEl, infoTextEl }, setRefState] = useState({})
@@ -137,7 +132,7 @@ const RouteComponent = ({ pattern, patternNumber, isMediumOrLarger }) => {
   }
 
   const goToCodeImplementatiomn = () => {
-    const newWindow = window.open(PRs[patternNumber], 'blank')
+    const newWindow = window.open('https://github.com/burukin/react-advanced-patterns/tree/master/src/patterns', 'blank')
     newWindow.opener = null
   }
 
